@@ -52,7 +52,7 @@
                             <label for="">Description: </label><?php echo ' ' . $item['description']; ?>
                         </div>
                         <div class="form-group">
-                            <label for="">Prix: </label><?php echo ' ' . number_format((float)$item['price'],2,'.',''); ?>
+                            <label for="">Prix: </label><?php echo ' ' . number_format((float)$item['price'],2,'.','') . ' €'; ?>
                         </div>
                         <div class="form-group">
                             <label for="">Catégorie: </label><?php echo ' ' . $item['category']; ?>
@@ -70,7 +70,7 @@
                 <div class="col-sm-6 site">
                     <div class="thumbnail">
                         <img src="<?php echo '../images/' . $item['image']; ?>" alt="...">
-                        <div class="price"><?php echo number_format((float)$item['price'],2,'.',''); ?></div>
+                        <div class="price"><?php echo number_format((float)$item['price'],2,'.','') . ' €'; ?></div>
                         <div class="caption">
                             <h4><?php echo $item['name']; ?></h4>
                             <p><?php echo $item['description']; ?></p>
