@@ -52,7 +52,6 @@
                         }
                         Database::disconnect();
 
-
                         ?>
 
                     </tbody>
